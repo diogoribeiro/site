@@ -83,8 +83,7 @@ body {
 }
 
 .title {
-  background: $main-orange;
-  color: $main-white;
+  color: $main-orange;
   font-size: 20px;
   font-weight: 400;
   margin: 0 auto;
@@ -158,6 +157,10 @@ body {
 
   .about-me .description {
     display: flex;
+
+    div {
+      margin-top: 0px;
+    }
 
     img {
       width: 300px;

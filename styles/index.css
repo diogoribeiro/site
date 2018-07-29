@@ -73,8 +73,7 @@ body {
 }
 
 .title {
-  background: #ff724c;
-  color: #ffffff;
+  color: #ff724c;
   font-size: 20px;
   font-weight: 400;
   margin: 0 auto;
@@ -142,6 +141,9 @@ body {
 
   .about-me .description {
     display: flex;
+  }
+  .about-me .description div {
+    margin-top: 0px;
   }
   .about-me .description img {
     width: 300px;
