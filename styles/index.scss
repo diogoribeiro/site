@@ -14,6 +14,7 @@ body {
 .main {
   background: url('../assets/header_bg.svg') no-repeat;
   background-size: 100% 300px;
+  height: 100%;
   overflow: auto;
 }
 
@@ -96,7 +97,6 @@ body {
 .description {
   font-weight: 300;
   margin-top: 20px;
-  text-align: center;
 }
 
 .description img {
@@ -106,11 +106,15 @@ body {
   width: 100%;
 }
 
-.description span {
+.description div {
   display: inline-block;
+
+  p {
+    line-height: 1.3;
+  }
 }
 
-.about-me .description span {
+.about-me .description div {
   margin-top: 20px;
 }
 
