@@ -88,11 +88,25 @@ body {
   margin-top: 20px;
 }
 
-.description img {
+.description .profile img {
   display: block;
   height: 300px;
   margin: 0 auto;
   width: 100%;
+}
+
+.description .profile .icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.description .profile .icons a {
+  float: left;
+  padding: 0 5px;
+}
+.description .profile .icons a img {
+  width: 30px;
+  height: 30px;
 }
 
 .description div {
@@ -145,7 +159,7 @@ body {
   .about-me .description div {
     margin-top: 0px;
   }
-  .about-me .description img {
+  .about-me .description .profile img {
     width: 300px;
   }
 }
