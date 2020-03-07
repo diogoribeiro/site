@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap');
+
+// custom colors
+$white-color:      #ffffff !default;
+
+// custom break-points
+$on-mobile:        959px !default;
+
+// custom typography
+$base-font-family: 'Alegreya', serif !default;
+
+body {
+  flex-direction: row;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@include media-query($on-mobile) {
+  body {
+    flex-direction: column;
+  }
+}

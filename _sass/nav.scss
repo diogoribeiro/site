@@ -1,0 +1,97 @@
+.site-actions {
+  align-items: center;
+  background: url('/assets/coffee-computer_04.jpg'), rgba(0,0,0, 0.5);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 96px;
+  width: 300px;
+}
+
+.site-title,
+.site-title:visited,
+.site-title:hover {
+  color: $white-color;
+}
+
+.site-nav {
+  float: none;
+}
+
+.site-nav .trigger {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-nav .page-link {
+  color: $white-color;
+}
+
+.social-media-list {
+  margin-top: 24px;
+}
+
+.social-media-list span:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-media-list .social-media-link {
+  color: $white-color;
+}
+
+.social-media-list .social-media-link:hover .username {
+  text-decoration: none;
+}
+
+.social-media-list .svg-icon {
+  fill: $white-color;
+}
+
+@include media-query($on-mobile) {
+  .site-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+  }
+
+  .site-title {
+    margin: 0 auto;
+  }
+
+  .site-nav {
+    background: transparent;
+    border: 0;
+    left: 8px;
+    right: auto;
+  }
+
+  .site-nav label[for="nav-trigger"] {
+    float: none;
+  }
+
+  .site-nav .menu-icon > svg {
+    fill: $white-color;
+  }
+
+  .site-nav input ~ .trigger {
+    background: $white-color;
+    border: 1px solid rgba(0,0,0, 0.3);
+    border-radius: 4px;
+    padding-top: 8px
+  }
+
+  .site-nav .page-link {
+    color: $text-color;
+    margin: 0;
+    padding: 0 24px 8px;
+  }
+
+  .social-media-list {
+    display: none;
+  }
+}
