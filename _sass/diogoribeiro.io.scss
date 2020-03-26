@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
 
 // custom colors
 $white-color:      #ffffff !default;
+$black-color:      #000000 !default;
+$highlight-color:  #ff724c !default;
 
 // custom break-points
 $on-mobile:        959px !default;
 
 // custom typography
+$bold-font-weight: 700;
+$semi-bold-font-weight: 600;
 $post-font-family: 'Open Sans', sans-serif !default;
 
 body {
@@ -24,6 +28,56 @@ a:hover {
   }
 }
 
-.post {
+.page-container {
+  box-sizing: content-box;
+  max-width: 1070px;
+  width: 100%;
+}
+
+.post-title {
+  font-weight: $semi-bold-font-weight;
+
+  &:after {
+    content: '';
+    background-color: $highlight-color;
+    display: block;
+    height: 1px;
+    margin-top: 16px;
+    width: 60px;
+  }
+}
+
+.post-content {
   font-family: $post-font-family;
+  margin-top: 64px;
+}
+
+.post-content > p:first-child::first-letter {
+  @include relative-font-size(4);
+  color: $black-color;
+  float: left;
+  line-height: 0.5;
+  margin-right: 8px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+.about-social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.about-social-media .svg-icon {
+  fill: $highlight-color;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.about-social-media a:not(:last-child) {
+  margin-right: 8px;
 }
