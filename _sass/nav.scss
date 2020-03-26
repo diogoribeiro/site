@@ -1,14 +1,15 @@
 .site-actions {
   align-items: center;
-  background: url('/assets/coffee-computer_04.jpg'), rgba(0,0,0, 0.5);
+  background: url('/assets/coffee-computer_04.jpg'), rgba(0,0,0, 0.8);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 96px;
+  padding: 0 30px 96px;
   width: 300px;
 }
 
@@ -20,6 +21,7 @@
 
 .site-nav {
   float: none;
+  width: 100%;
 }
 
 .site-nav .trigger {
@@ -28,7 +30,14 @@
 }
 
 .site-nav .page-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: $white-color;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.site-nav .page-link:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .social-media-list {
@@ -40,7 +49,12 @@
 }
 
 .social-media-list .social-media-link {
-  color: $white-color;
+  color: rgba(255, 255, 255, 0.4);
+  fill: rgba(255, 255, 255, 0.4);
+}
+
+.social-media-list .social-media-link:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .social-media-list .social-media-link:hover .username {
@@ -48,7 +62,7 @@
 }
 
 .social-media-list .svg-icon {
-  fill: $white-color;
+  fill: currentColor;
 }
 
 @include media-query($on-mobile) {
@@ -68,6 +82,7 @@
     border: 0;
     left: 8px;
     right: auto;
+    width: 25%;
   }
 
   .site-nav label[for="nav-trigger"] {
