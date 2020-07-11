@@ -31,9 +31,18 @@ a:hover {
 
 .page-container {
   box-sizing: content-box;
+  margin-left: 300px;
   max-width: 1070px;
   width: 100%;
 }
+
+@include media-query($on-tablet) {
+  .page-container {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+}
+
 
 .post-list-heading {
   font-weight: 500;
