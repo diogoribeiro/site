@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-03-07 00:17:47 -0300
-categories: jekyll update
+title:  "Rock Paper Scissors"
+date:   2020-07-11 00:17:47 -0300
+categories:
+  - projects
+  - front-end
+banner: 'https://res.cloudinary.com/dao8ebssb/image/upload/c_scale,w_800/v1594478578/diogoribeiro.me/screenshot_uytg3t.png'
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
