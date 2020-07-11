@@ -7,11 +7,12 @@ $black-color:      #000000 !default;
 $highlight-color:  #000000 !default;
 
 // custom break-points
-$on-mobile:        959px !default;
+$on-mobile:        599px !default;
+$on-tablet:        959px !default;
 
 // custom typography
 $bold-font-weight: 700;
-$semi-bold-font-weight: 600;
+$semi-bold-font-weight: 500;
 $post-font-family: 'Raleway', sans-serif !default;
 
 body {
@@ -22,7 +23,7 @@ a:hover {
   text-decoration: none;
 }
 
-@include media-query($on-mobile) {
+@include media-query($on-tablet) {
   body {
     flex-direction: column;
   }
@@ -38,10 +39,34 @@ a:hover {
   font-weight: 500;
 }
 
-.post-title {
-  font-weight: $semi-bold-font-weight;
+.post-link.post-title {
+  font-weight: $semi-bold-font-weight;;
+  padding-left: 5rem;
+}
 
-  &:after {
+@include media-query($on-mobile) {
+  .post-link.post-title {
+    @include relative-font-size(2);
+    padding-left: 1rem;
+  }
+}
+
+.post-excerpt {
+  padding: 2rem 3rem;
+  text-align: justify;
+}
+
+@include media-query($on-mobile) {
+  .post-excerpt {
+    padding: 2rem;
+  }
+}
+
+
+.post-title {
+  font-weight: $bold-font-weight;
+
+  &:not(.post-link):after {
     content: '';
     background-color: $highlight-color;
     display: block;
@@ -54,6 +79,7 @@ a:hover {
 .post-content {
   font-family: $post-font-family;
   margin-top: 64px;
+  text-align: justify;
 }
 
 .post-content > p:first-child::first-letter {
