@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;800&display=swap');
 
 // custom colors
 $white-color:      #ffffff !default;
 $black-color:      #000000 !default;
-$highlight-color:  #ff724c !default;
+$highlight-color:  #000000 !default;
 
 // custom break-points
 $on-mobile:        959px !default;
@@ -12,7 +12,7 @@ $on-mobile:        959px !default;
 // custom typography
 $bold-font-weight: 700;
 $semi-bold-font-weight: 600;
-$post-font-family: 'Open Sans', sans-serif !default;
+$post-font-family: 'Raleway', sans-serif !default;
 
 body {
   flex-direction: row;
@@ -32,6 +32,10 @@ a:hover {
   box-sizing: content-box;
   max-width: 1070px;
   width: 100%;
+}
+
+.post-list-heading {
+  font-weight: 500;
 }
 
 .post-title {

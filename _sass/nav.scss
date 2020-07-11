@@ -25,6 +25,7 @@
 }
 
 .site-nav .trigger {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -32,8 +33,10 @@
 .site-nav .page-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: $white-color;
+  letter-spacing: 3px;
   padding: 5px 0;
   text-align: center;
+  width: 50%;
 }
 
 .site-nav .page-link:hover {
@@ -41,15 +44,18 @@
 }
 
 .social-media-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 24px;
-}
-
-.social-media-list span:not(:last-child) {
-  margin-right: 16px;
+  width: 100%;
 }
 
 .social-media-list .social-media-link {
+  align-items: center;
   color: rgba(255, 255, 255, 0.4);
+  display: flex;
   fill: rgba(255, 255, 255, 0.4);
 }
 
@@ -63,10 +69,12 @@
 
 .social-media-list .svg-icon {
   fill: currentColor;
+  padding: 0 10px;
 }
 
 @include media-query($on-mobile) {
   .site-actions {
+    background: $black-color;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
