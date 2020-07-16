@@ -85,6 +85,19 @@ a:hover {
   }
 }
 
+.post-highlight-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  width: 200px;
+}
+
+.post-highlight-links a {
+  @include relative-font-size(0.9);
+  color: #2a7ae2;
+  font-family: $post-font-family;
+}
+
 .post-content {
   font-family: $post-font-family;
   margin-top: 64px;
