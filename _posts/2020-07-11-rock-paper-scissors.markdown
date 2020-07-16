@@ -1,41 +1,20 @@
 ---
 layout: post
 title:  "Rock Paper Scissors"
-date:   2020-07-11 00:17:47 -0300
+location: 'https://bit.ly/32sEX17'
+repository: 'https://github.com/diogoribeiro/rock-paper-scissors'
 categories:
   - projects
   - front-end
 banner: 'https://res.cloudinary.com/dao8ebssb/image/upload/c_scale,w_800/v1594478578/diogoribeiro.me/screenshot_uytg3t.png'
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Rock paper scissors is a game I used to play a lot back in my teenage years, so I decided to make a web version that I could play when bored.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Since I'm not an exceptional designer, I borrowed the designs from [Frontend Mentor][frontend-mentor].
 
-Jekyll also offers powerful support for code snippets:
+Tech stack:
+- React
+- Redux
+- Styled Components
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-{% highlight javascript %}
-function foo() {
-  const a = 10;
-
-  return function bar(b) {
-    console.log(b*a);
-  }
-}
-
-console.log(foo()(2))
-// prints 20
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[frontend-mentor]: https://www.frontendmentor.io
