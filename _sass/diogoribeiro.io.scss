@@ -51,7 +51,7 @@ a:hover {
 
 .post-link.post-title {
   font-weight: $semi-bold-font-weight;;
-  padding-left: 5rem;
+  padding-left: 3rem;
 }
 
 @include media-query($on-mobile) {
@@ -68,7 +68,7 @@ a:hover {
 
 @include media-query($on-mobile) {
   .post-excerpt {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
