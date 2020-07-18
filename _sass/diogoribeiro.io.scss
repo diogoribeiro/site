@@ -5,6 +5,7 @@
 $white-color:      #ffffff !default;
 $black-color:      #000000 !default;
 $highlight-color:  #000000 !default;
+$link-color:       #2a7ae2;
 
 // custom break-points
 $on-mobile:        599px !default;
@@ -94,7 +95,7 @@ a:hover {
 
 .post-highlight-links a {
   @include relative-font-size(0.9);
-  color: #2a7ae2;
+  color: $link-color;
   font-family: $post-font-family;
 }
 
@@ -114,6 +115,35 @@ a:hover {
   text-transform: uppercase;
   vertical-align: bottom;
 }
+
+.post-content.e-content a {
+  color: $link-color;
+  position: relative;
+  z-index: 0;
+}
+
+.post-content.e-content a:after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: width 0.5s ease-in;
+  top: 0;
+  width: 0;
+  z-index: -1;
+}
+
+.post-content.e-content a:hover {
+  color: $white-color;
+  padding: 3px;
+}
+
+.post-content.e-content a:hover:after {
+  background-color: $link-color;
+  width: 100%;
+}
+
 
 .about-social-media {
   display: flex;
