@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Diogo Ribeiro is a senior software engineer. Passionate about software, he’s been coding for more than ten years, translating ideas to software, and transforming concepts into products.
+I'm a senior software engineer. Passionate about software, I've been coding for more than ten years, translating ideas to software, and transforming concepts into products.
 
-As a software engineer, He’s worked as a full-stack, back end, and front end developer using different technologies such as Java, Ruby ( Ruby on Rails ), Javascript, HTML, and CSS.
+As a software engineer, I've worked as a full-stack, back end, and front end developer using different technologies such as Java, Ruby ( Ruby on Rails ), Javascript, HTML, and CSS.
 
 <div class="about-social-media">
   <a href="https://twitter.com/diogoribeiro">
