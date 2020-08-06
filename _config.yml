@@ -21,6 +21,7 @@ url: "https://diogoribeiro.me" # the base hostname & protocol for your site, e.g
 twitter_username: diogoribeiro
 github_username:  diogoribeiro
 linkedin_username:  https://www.linkedin.com/in/diogo-ribeiro-de-souza-66ba2824/
+google_analytics: UA-123020206-1
 
 # Build settings
 markdown: kramdown
